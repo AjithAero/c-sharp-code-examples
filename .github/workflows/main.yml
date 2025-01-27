@@ -1,0 +1,8 @@
+name: provide
+jobs:
+  NextGen-Static-Analysis:
+  runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Analyze 
+        .\sl analyze  --app appname1 —verbose .
