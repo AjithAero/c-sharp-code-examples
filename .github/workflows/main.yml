@@ -26,6 +26,6 @@ jobs:
 
     - name: Analyze with NextGen Static Analysis
       run: |
-        .\sl.exe analyze --strict --app shiftleft-csharp-demo1  .
+        .\sl.exe analyze --strict --app shiftleft-csharp-demo1  “CSharp Code Samples"
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
